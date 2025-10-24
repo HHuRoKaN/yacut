@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}500 - Ошибка сервера{% endblock %}
+{% block content %}
+<main>
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h1 class="text-center mb-4">
+          <span style="color:red">Ya</span>Cut
+        </h1>
+        <h2 class="display-4 text-danger mb-3">500</h2>
+        <h3 class="h2 text-muted mb-4">Внутренняя ошибка сервера</h3>
+        <p class="lead mb-4">
+          Приносим извинения за временные неудобства.<br>
+          Наша команда уже уведомлена о проблеме.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="{{ url_for('index_view') }}" class="btn btn-primary btn-lg px-4 py-2">
+            На главную
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
